@@ -314,10 +314,6 @@ public class Database extends SQLiteOpenHelper {
             cv2.put( "BOOK_ID",book_Id);
             cv2.put( "AUTHOR_NAME",authorName);
             dbw.insert( "Book_Author", null ,cv2);
-//            dbw.close();
-
-//            SQLiteDatabase dbw1=getWritableDatabase();
-
             dbw.close();
 
 
@@ -409,9 +405,6 @@ public class Database extends SQLiteOpenHelper {
         String branchID = getBranchID(BranchName);
         String cardID = getCardID(memberName);
 
-//        String bookId = "sample";
-//        String branchID = "sample2";
-//        String cardID = "sample3";
 
         SQLiteDatabase db=getReadableDatabase();
 
@@ -570,8 +563,6 @@ public class Database extends SQLiteOpenHelper {
         String date1Str = duedate;
         String date2Str = formattedDate;
 
-        // Create a SimpleDateFormat object to parse the dates
-//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
         // Parse the dates
         Date date1 = null;
@@ -688,7 +679,6 @@ public class Database extends SQLiteOpenHelper {
                 "SELECT Branch.BRANCH_NAME FROM Branch INNER JOIN Book_Copy ON Branch.BRANCH_ID = Book_Copy.BRANCH_ID",
                 null
         );
-//        Cursor cursor = db.rawQuery("SELECT * FROM Branch", null);
 
         // Loop through the cursor and create Member objects
         while (cursor.moveToNext()) {

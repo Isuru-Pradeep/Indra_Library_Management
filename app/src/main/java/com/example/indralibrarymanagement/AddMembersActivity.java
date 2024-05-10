@@ -41,11 +41,10 @@ public class AddMembersActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT).show();
                 }
                 else {
-//                    Toast.makeText(getApplicationContext(), "UP", Toast.LENGTH_SHORT).show()
 
-                    if (db.addMember(Membername,MemberAddress,MemberPhone) ==0){
+                    if (db.addMember(Membername,MemberAddress,MemberPhone) == 0){
 
-                    Toast.makeText(getApplicationContext(), "Member name alredy exist", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Member name already exist", Toast.LENGTH_SHORT).show();
 
                     } else {
                         Toast.makeText(getApplicationContext(), "New member details added", Toast.LENGTH_SHORT).show();

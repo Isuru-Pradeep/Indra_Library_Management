@@ -18,11 +18,6 @@ public class Member {
 
     @Override
     public String toString() {
-//      return
-//                    " " + cardNo +
-//                    " " + name + '\'' +
-//                    " " + address + '\'' +
-//                    " " + phone + '\'';
 
             return String.format("%-7s %-20s %-30s %-13s %-13s", cardNo, name, address, phone,unpaidDue);
 

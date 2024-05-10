@@ -40,7 +40,6 @@ public class AddPublisherActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT).show();
                 }
                 else {
-//                    Toast.makeText(getApplicationContext(), "UP", Toast.LENGTH_SHORT).show();
 
                     if (db.addPublisher(PublisherName,PublisherAddress,PublisherPhone) ==0){
 

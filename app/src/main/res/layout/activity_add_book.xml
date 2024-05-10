@@ -85,7 +85,6 @@
         android:id="@+id/editAuthorName"
         android:layout_width="345dp"
         android:layout_height="39dp"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="414dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -105,8 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextBookName"
-        app:layout_constraintVertical_bias="0.489" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/buttonAddBook"
