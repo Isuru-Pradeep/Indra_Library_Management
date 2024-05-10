@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IndraLibraryManagement" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.IndraLibraryManagement" parent="Base.Theme.IndraLibraryManagement" />
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Set the primary and accent colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <!-- Set the status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_dark</item>
+
+        <!-- Set the navigation bar color -->
+        <item name="android:navigationBarColor" tools:targetApi="o">@color/primary</item>
+    </style>
+</resources>

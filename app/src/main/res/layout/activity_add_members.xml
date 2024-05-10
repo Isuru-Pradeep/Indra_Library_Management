@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/com_background"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Member"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/editTextMemberName"
+        android:layout_width="345dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="414dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Memeber's name"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <EditText
+        android:id="@+id/editTextMemberAddress"
+        android:layout_width="345dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMemberName"
+        app:layout_constraintVertical_bias="0.157" />
+
+
+    <EditText
+        android:id="@+id/editTextMemberphone"
+        android:layout_width="345dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/add_call"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:paddingLeft="20dp"
+
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMemberAddress"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/buttonAddMember"
+        android:layout_width="185dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Member"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMemberphone" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Indra Library"
+        android:textColor="@color/purple_200"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/com_background"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/titleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indra Library"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleHome"
+        android:layout_marginTop="2dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/titleHome"
+                android:layout_margin="20dp"
+                android:columnCount="2"
+                android:rowCount="9">
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAddMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/primary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADD MEMBERS"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAddPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/primary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADD PUBLISHER"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAddBranch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/primary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw_branch"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADD BRANCH"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAddBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/primary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/book"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADD BOOK"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardShowMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SHOW MEMBERS"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardShowPublishers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SHOW PUBLISHER"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardShowBranchs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw_branch"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SHOW BRANCHS"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardShowBooks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/book"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SHOW BOOK"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLoanBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/primary_variant"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/book_loan"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOAN BOOK"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardReturnBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/primary_variant"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/book_return"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RETURN BOOK"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardDeleteMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/error"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/user1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DELETE MEMBER"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardExit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="1"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/error"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_cancel_24"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOGOUT"
+                            android:textAlignment="center"
+                            android:textColor="@color/on_primary"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
