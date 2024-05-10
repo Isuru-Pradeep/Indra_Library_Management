@@ -676,7 +676,7 @@ public class Database extends SQLiteOpenHelper {
         // Create a cursor to select all branches on loan
 
         Cursor cursor = db.rawQuery(
-                "SELECT Branch.BRANCH_NAME FROM Branch INNER JOIN Book_Copy ON Branch.BRANCH_ID = Book_Copy.BRANCH_ID",
+                "SELECT DISTINCT Branch.BRANCH_NAME FROM Branch INNER JOIN Book_Copy ON Branch.BRANCH_ID = Book_Copy.BRANCH_ID",
                 null
         );
 
