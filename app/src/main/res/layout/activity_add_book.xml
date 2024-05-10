@@ -44,8 +44,7 @@
         android:id="@+id/editTextBookName"
         android:layout_width="345dp"
         android:layout_height="39dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="414dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/book_24"
         android:drawablePadding="10dp"
@@ -60,11 +59,9 @@
 
         android:textColorHighlight="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
 
     <Spinner
         android:id="@+id/spinnerPublisherName"
@@ -85,7 +82,7 @@
         android:id="@+id/editAuthorName"
         android:layout_width="345dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="414dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -96,15 +93,13 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/white"
 
+        android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBookName"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBookName" />
 
     <Button
         android:id="@+id/buttonAddBook"
