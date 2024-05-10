@@ -49,14 +49,12 @@ public class AddBookActivity extends AppCompatActivity implements AdapterView.On
             String publisherName = publishers.name;
             myList.add(publisherName);
         }
-////        String[] myArray = (String[]) List.toArray(new String[0]);
         String[] myArray = myList.toArray(new String[0]);
 
 
         spinnerPublishers = findViewById(R.id.spinnerPublisherName);
 
         spinnerPublishers.setOnItemSelectedListener(this);
-////        String[] textSizes = getResources().getStringArray(R.array.font_sizes);
         ArrayAdapter adapter = new ArrayAdapter(this,
                 android.R.layout.simple_spinner_item, myArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
